@@ -1,0 +1,143 @@
+#school {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+#school img {
+    min-width: 720px;
+    margin-bottom: 16px;
+}
+
+#school p {
+    text-align: center;
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    width: 620px;
+}
+
+#map {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#map p {
+    position: absolute;
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#map iframe {
+    border: 0;
+    width: 800px;
+    height: 600px;
+}
+
+#phone_mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 36px;
+}
+
+#phone, #mail {
+    display: flex;
+    flex-direction: column;
+}
+
+#phone h3 {
+    font-family: Georgia, sans-serif;
+    font-size: 24px;
+}
+
+#phone ul {
+    align-self: center;
+}
+
+#phone li {
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#mail h3 {
+    font-family: Georgia, sans-serif;
+    font-size: 22px;
+}
+
+#mail p {
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    align-self: center;
+}
+
+@media (max-width: 840px) {
+    #map iframe {
+        width: 640px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 810px) {
+    #school img {
+        min-width: 640px;
+    }
+}
+
+@media (max-width: 760px) {
+    #school img {
+        min-width: 560px;
+    }
+}
+
+@media (max-width: 685px) {
+    #map iframe {
+        width: 560px;
+        height: 420px;
+    }
+
+    #school p {
+        width: 480px;
+    }
+}
+
+@media (max-width: 610px) {
+    #school img {
+        min-width: 480px;
+    }
+}
+
+@media (max-width: 595px) {
+    #map iframe {
+        width: 480px;
+        height: 360px;
+    }
+
+    #phone_mail {
+        display: grid;
+    }
+
+    #phone {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 510px) {
+    #map iframe {
+        width: 420px;
+        height: 280px;
+    }
+
+    #school img {
+        min-width: 420px;
+    }
+
+    #school p {
+        width: 420px;
+    }
+}

@@ -1,0 +1,129 @@
+#div_stand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+#div_stand img {
+    max-width: 960px;
+}
+
+#div_first img, #div_second img {
+    max-width: 840px;
+    align-self: center;
+    margin: 16px 0;
+}
+
+#div_first, #div_second {
+    display: flex;
+    flex-direction: column;
+}
+
+#div_first h1, #div_second h1 {
+    align-self: center;
+    font-family: Georgia, sans-serif;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+#div_first p, #div_second p {
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+    padding: 0 72px;
+    margin-top: 12px;
+}
+
+#div_second {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1030px) {
+    #div_stand img {
+        max-width: 760px;
+    }
+
+    #div_first img {
+        max-width: 760px;
+    }
+}
+
+@media (max-width: 895px) {
+    #div_first h1, #div_second h1 {
+        font-size: 22px;
+    }
+
+    #div_first p, #div_second p {
+        font-size: 18px;
+    }
+
+    #div_stand img {
+        max-width: 680px;
+    }
+
+    #div_first img {
+        max-width: 680px;
+    }
+}
+
+@media (max-width: 765px) {
+    #div_first h1, #div_second h1 {
+        font-size: 20px;
+    }
+
+    #div_first p, #div_second p {
+        font-size: 16px;
+    }
+
+    #div_stand img {
+        max-width: 580px;
+    }
+
+    #div_first img {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 685px) {
+    #div_first h1, #div_second h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 640px) {
+    #div_second img {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 620px) {
+    #div_first h1, #div_second h1 {
+        width: 400px;
+        text-align: center;
+    }
+
+    #div_stand img {
+        max-width: 480px;
+    }
+
+    #div_first img {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 550px) {
+    #div_second img {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 510px) {
+    #div_stand img {
+        max-width: 420px;
+    }
+
+    #div_first img {
+        max-width: 420px;
+    }
+}

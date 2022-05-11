@@ -1,0 +1,303 @@
+#reconstruction, #remembrance_book, #lecture, #exhibition, #research {
+    margin: 28px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 96px;
+}
+
+#rec_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#rec_content img {
+    max-width: 640px;
+    max-height: 480px;
+    margin-right: 64px;
+}
+
+#rec_content ul {
+    align-self: center;
+}
+
+#rec_content li {
+    font-family: Georgia, sans-serif;
+    font-size: 22px;
+}
+
+#lec_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#lec_content img {
+    max-width: 640px;
+    max-height: 480px;
+    min-width: 640px;
+    min-height: 480px;
+}
+
+#lec_content img+img {
+    margin-left: 32px;
+}
+
+#rb_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#rb_content img {
+    max-width: 640px;
+    max-height: 480px;
+    min-width: 640px;
+    min-height: 480px;
+}
+
+#rb_content img+img {
+    margin-left: 32px;
+}
+
+#rb_desc {
+    align-self: center;
+    font-family: Georgia, sans-serif;
+    font-size: 22px;
+    margin-top: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+#research ol {
+    align-self: center;
+}
+
+#research li {
+    font-family: Georgia, sans-serif;
+    font-size: 24px;
+}
+
+#reconstruction h1, #remembrance_book h1, #lecture h1, #exhibition h1, #research h1 {
+    align-self: center;
+    font-family: Georgia, sans-serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#reconstruction p, #lecture p, #exhibition p, #research p {
+    font-family: Georgia, sans-serif;
+    font-size: 22px;
+    padding: 0 72px;
+    margin-top: 12px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery_control {
+    width: 32px;
+    height: 32px;
+    margin: 16px;
+}
+
+#exh_image {
+    min-height: 592px;
+}
+
+#exh_image_view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+}
+
+@media (max-width: 700px) {
+    #bridge p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1535px) {
+    #exhibition h1 {
+        width: 800px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1400px) {
+    #rb_content, #lec_content {
+        display: grid;
+    }
+
+    #rb_content img+img, #lec_content img+img {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 1170px) {
+    #rec_content {
+        display: grid;
+    }
+
+    #rec_content img {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    #rec_content ul {
+        align-self: center;
+    }
+}
+
+@media (max-width: 960px) {
+    #exh_image {
+        max-width: 720px;
+        max-height: 590px;
+        min-height: 462px;
+    }
+
+    #exh_image_view {
+        width: 720px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 850px) {
+    #exh_image {
+        max-width: 680px;
+        max-height: 550px;
+    }
+}
+
+@media (max-width: 770px) {
+    #exh_image {
+        max-width: 520px;
+        max-height: 390px;
+        min-height: 332px;
+    }
+
+    #exh_image_view {
+        width: 520px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 760px) {
+    #rec_content img {
+        max-width: 520px;
+        max-height: 360px;
+    }
+
+    #rb_content img {
+        max-width: 520px;
+        max-height: 360px;
+        min-width: 520px;
+        min-height: 360px;
+    }
+
+    #lec_content img {
+        max-width: 520px;
+        max-height: 360px;
+        min-width: 520px;
+        min-height: 360px;
+    }
+
+    #reconstruction, #remembrance_book, #lecture, #exhibition, #research {
+        padding: 0 48px;
+    }
+
+    #research li {
+        font-family: Georgia, sans-serif;
+        font-size: 18px;
+    }
+
+    #rec_content li {
+        font-family: Georgia, sans-serif;
+        font-size: 18px;
+    }
+
+    #exhibition h1 {
+        width: 680px;
+        font-size: 18px;
+    }
+
+    #remembrance_book p {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    #exhibition h1 {
+        width: 480px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 585px) {
+    #exh_image {
+        max-width: 460px;
+        max-height: 280px;
+        min-height: 280px;
+    }
+
+    #exh_image_view {
+        width: 460px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 560px) {
+    #reconstruction h1, #remembrance_book h1, #lecture h1, #research h1 {
+        font-size: 20px;
+    }
+
+    #exhibition h1 {
+        width: 360px;
+    }
+}
+
+@media (max-width: 540px) {
+    #rec_content img {
+        max-width: 500px;
+        max-height: 280px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #rb_content img {
+        max-width: 420px;
+        max-height: 240px;
+        min-width: 420px;
+        min-height: 240px;
+    }
+
+    #lec_content img {
+        max-width: 420px;
+        max-height: 240px;
+        min-width: 420px;
+        min-height: 240px;
+    }
+}
+
+@media (max-width: 510px) {
+    #exh_image {
+        max-width: 420px;
+        max-height: 260px;
+        min-height: 260px;
+    }
+
+    #exh_image_view {
+        width: 420px;
+        align-self: center;
+    }
+}

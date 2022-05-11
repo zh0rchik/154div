@@ -1,0 +1,103 @@
+#school_museum {
+    margin-top: 28px;
+}
+
+#education_areas {
+    margin-bottom: 28px;
+}
+
+#school_museum, #head_of_museum, #education_areas {
+    display: flex;
+    flex-direction: row;
+    padding: 0 96px;
+}
+
+#school_museum p, #head_of_museum p, #education_areas p {
+    font-family: Georgia, sans-serif;
+    font-size: 22px;
+    align-self: center;
+}
+
+#school_museum img, #education_areas img {
+    max-width: 360px;
+    max-height: 608px;
+    margin-right: 64px;
+}
+
+#head_of_museum img {
+    max-width: 360px;
+    max-height: 608px;
+    margin-left: 64px;
+}
+
+#education_areas ul {
+    padding-left: 22px;
+}
+
+.list_ed_areas{
+    align-self: center;
+}
+
+#education_areas li {
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+}
+
+.header_p{
+    margin: 30px;
+}
+
+
+@media (max-width: 1030px) {
+    #school_museum img {
+        max-width: 280px;
+        max-height: 375px;
+        margin-right: 56px;
+    }
+
+    #education_areas img {
+        max-width: 280px;
+        max-height: 425px;
+        margin-right: 56px;
+    }
+
+    #head_of_museum img {
+        max-width: 290px;
+        max-height: 515px;
+        margin-left: 56px;
+    }
+
+    #school_museum p, #head_of_museum p, #education_areas p {
+        font-family: Georgia, sans-serif;
+        font-size: 20px;
+    }
+
+    #school_museum, #education_areas {
+        display: grid;
+    }
+
+    #school_museum img, #education_areas img {
+        align-self: center;
+        justify-self: center;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    #head_of_museum {
+        display: grid;
+    }
+
+    #head_of_museum img {
+        align-self: center;
+        justify-self: center;
+        order: -1;
+        margin-left: 0;
+        margin-bottom: 16px;
+    }
+
+    #head_of_museum p {
+        order: 1;
+    }
+}

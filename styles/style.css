@@ -1,0 +1,66 @@
+#museum_events, #museum_achievements {
+    margin: 28px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#museum_events h1, #museum_achievements h1 {
+    align-self: center;
+    font-family: Georgia, sans-serif;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+#museum_events p, #museum_achievements p {
+    font-family: Georgia, sans-serif;
+    font-size: 22px;
+    padding: 0 72px;
+    margin-top: 12px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery_control {
+    width: 32px;
+    height: 32px;
+    margin: 16px;
+}
+
+#mus_evt_image {
+    max-width: 640px;
+    min-width: 640px;
+    min-height: 525px;
+}
+
+#mus_ach_image {
+    max-width: 520px;
+}
+
+@media (max-width: 780px) {
+    #mus_evt_image {
+        max-width: 480px;
+        min-width: 480px;
+        min-height: 365px;
+    }
+
+    #mus_ach_image {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 590px) {
+    #mus_evt_image {
+        max-width: 400px;
+        min-width: 400px;
+        min-height: 285px;
+    }
+
+    #mus_ach_image {
+        max-width: 280px;
+    }
+}
