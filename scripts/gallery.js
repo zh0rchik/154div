@@ -25,34 +25,6 @@ let ach_picturesCount = 15;
 
 function ach_changePrev() {
     ach_currentPictureIndex > 1 ? ach_currentPictureIndex-- : ach_currentPictureIndex = ach_picturesCount;
-    ach_changeImage(false);
-}
-
-function ach_changeNext() {
-    ach_currentPictureIndex < ach_picturesCount ? ach_currentPictureIndex++ : ach_currentPictureIndex = 1;
-    ach_changeImage(true);
-}
-
-function ach_changeImage(direction) {
-    animate("mus_ach_image", direction, `/images/galleries/achievements/${ach_currentPictureIndex}.jpg`);
-}
-
-
-function animate(id, direction, path) {
-    document.getElementById(id).style.animation = direction ? "g_anim 2500ms linear 1" : "g_anim_rev 2500ms linear 1";
-    setTimeout(() => {
-        document.getElementById(id).src = path;
-    }, 2500);
-    setTimeout(() => {
-        document.getElementById(id).style.animation = direction ? "out_g_anim 2500ms linear 1" : "out_g_anim_rev 2500ms linear 1";
-    }, 2500);
-}
-
-/*let ach_currentPictureIndex = 4;
-let ach_picturesCount = 5;
-
-function ach_changePrev() {
-    ach_currentPictureIndex > 1 ? ach_currentPictureIndex-- : ach_currentPictureIndex = ach_picturesCount;
     ach_changeImage();
 }
 
@@ -62,11 +34,12 @@ function ach_changeNext() {
 }
 
 function ach_changeImage(){
-    document.getElementById("mus_ach_image").src = `/images/galleries/achievements/${ach_currentPictureIndex}.jpg`;
-}*/
-
-
-
+    let image = `/images/galleries/achievements/${ach_currentPictureIndex}.jpg`;
+    $('#mus_ach_image').fadeOut("slow", function(){
+        $('#mus_ach_image').attr("src", image);
+        $('#mus_ach_image').fadeIn("slow");
+    });
+}
 
 let exh_currentPictureIndex = 1;
 let exh_picturesCount = 5;

@@ -35,10 +35,8 @@
 }
 
 #lec_content img {
-    max-width: 640px;
-    max-height: 480px;
-    min-width: 640px;
-    min-height: 480px;
+    width: 480px;
+    height: 360px;
 }
 
 #lec_content img+img {
@@ -109,7 +107,7 @@
 }
 
 #exh_image {
-    min-height: 592px;
+    height: 500px;
 }
 
 #exh_image_view{
